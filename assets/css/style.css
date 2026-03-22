@@ -1188,3 +1188,16 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+
+/* 이미지 크기 최적화 및 중앙 정렬 */
+.portfolio-details-slider img {
+  width: auto;
+  max-height: 400px; /* 기존보다 줄어든 높이 */
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.swiper-slide {
+  text-align: center;
+  background: #000;
+}

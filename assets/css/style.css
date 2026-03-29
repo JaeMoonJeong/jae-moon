@@ -1009,16 +1009,24 @@ section .container {
   }
 }
 
-.portfolio-details .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
+/* 슬라이드 컨테이너 설정 */
+.portfolio-details .swiper-slide {
+  background-color: #000; /* 나머지 공간을 검은색으로 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  /* 8:5 비율 고정 (너비 기반) */
+  aspect-ratio: 8 / 5; 
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
+/* 이미지 설정 */
+.portfolio-details .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  /* 이미지가 잘리지 않고 비율을 유지하며 컨테이너 안에 들어가게 함 */
+  object-fit: contain; 
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
@@ -1216,10 +1224,19 @@ section .container {
 
 
 /* 슬라이더 내 이미지 크기 통일 */
+.portfolio-details-slider .swiper-slide {
+  background-color: #000000; /* 부족한 부분을 채울 검은색 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden; /* 영역 밖으로 나가는 이미지 방지 */
+}
+
 .portfolio-details-slider .swiper-slide img {
-  width: 100%;           /* 부모 너비에 맞춤 */
-  height: 450px;         /* 원하는 고정 높이 설정 */
-  object-fit: cover;     /* 이미지 비율을 유지하면서 영역을 꽉 채움 (잘림 방지) */
-  object-position: center; /* 이미지의 중앙을 기준으로 맞춤 */
-  border-radius: 8px;    /* 선택 사항: 모서리 둥글게 */
+  width: 100%;
+  aspect-ratio: 8 / 5;      /* 8:5 비율 강제 고정 */
+  object-fit: contain;      /* 이미지 전체가 보이도록 비율 유지 (남는 공간 발생) */
+  object-position: center;  /* 이미지를 중앙에 배치 */
+  height: auto;             /* 가로 세로 비율에 맞게 높이 자동 조절 */
 }

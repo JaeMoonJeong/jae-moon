@@ -49,15 +49,48 @@
             <h2 class="portfolio-title">Unmanned Mother-Submarine Key Technology</h2>
             <p style="color: #888;">장주기 다목적 무인 잠수모함 핵심기술개발</p>
 
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><img src="assets/img/portfolio/submarine1.jpeg" alt="Submarine Structure"></div>
-                <div class="swiper-slide"><img src="assets/img/portfolio/submarine2.png" alt="Submarine Structure"></div>
-                <div class="swiper-slide"><img src="assets/img/portfolio/Submarine3.png" alt="Submarine Structure"></div>                
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+          <style>
+            /* 이미지 캡션 스타일링 */
+            .swiper-slide { position: relative; }
+            .study-caption {
+              position: absolute;
+              top: 0px;       /* 위쪽 여백 */
+              left: 5px;      /* 왼쪽 여백 */
+              bottom: auto;    /* 기존 아래쪽 설정 초기화 */
 
+              background: rgba(0, 255, 136, 0.9); /* 포인트 컬러 적용 */
+              color: #000;
+              padding: 8px 15px;
+              font-weight: 700;
+              border-radius: 5px;
+              font-size: 14px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+              z-index: 10; /* 혹시 모를 이미지 겹침 방지 */
+            }
+          </style>
+
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/submarine1.jpeg" alt="Submarine Structure">
+                <div class="study-caption">Study 1: QZS-based Metastructure</div>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/submarine2.png" alt="Submarine Structure">
+                <div class="study-caption">Study 2: Kirigami-based Composite</div>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Submarine3.png" alt="Submarine Structure">
+                <div class="study-caption">Study 3: Truss-based Resonant Structure</div>
+              </div>
+              
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
           <div class="star-section">
               <h4><i class="bi bi-bullseye"></i> Situation</h4>
               <ul>

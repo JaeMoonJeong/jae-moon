@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - AI Engineer Bootcamp</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body { background-color: #000; color: #fff; }
+    .portfolio-details { padding: 40px 0; }
+    .portfolio-title { color: #00ff88; font-weight: 700; margin-bottom: 20px; }
+    .portfolio-info { background: #111 !important; color: #ccc !important; padding: 30px; border-radius: 15px; border: 1px solid #222; }
+    .portfolio-info h3 { border-bottom: 1px solid #333; padding-bottom: 10px; color: #fff; }
+    .portfolio-info strong { color: #00ff88; }
+    .star-section h4 { color: #00ff88; margin-top: 25px; font-size: 20px; text-transform: uppercase; }
+    .star-section ul { list-style: none; padding-left: 0; }
+    .star-section li::before { content: "•"; color: #00ff88; font-weight: bold; display: inline-block; width: 1em; }
+    .achievement-box { margin-top: 30px; padding: 20px; background: #0a1910; border-left: 5px solid #00ff88; }
+
+    /* 이미지 캡션 스타일링 */
+    .swiper-slide { position: relative; }
+    .study-caption {
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      bottom: auto;
+      background: rgba(0, 255, 136, 0.9);
+      color: #000;
+      padding: 8px 15px;
+      font-weight: 700;
+      border-radius: 5px;
+      font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    /* Module badge */
+    .module-badge {
+      display: inline-block;
+      background: rgba(0,255,136,0.15);
+      border: 1px solid #00ff88;
+      color: #00ff88;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 3px 3px 3px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main id="main">
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">AI Engineer Bootcamp</h2>
+            <p style="color: #888;">Government-Funded Program (Value: approx. $17,000 USD) · 코드잇 스프린트</p>
+
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Bootcamp1.png" alt="Object Detection">
+                <div class="study-caption">Module 1: Object Detection</div>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Bootcamp2.png" alt="Segmentation">
+                <div class="study-caption">Module 2: Segmentation</div>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Bootcamp3.png" alt="RAG System">
+                <div class="study-caption">Module 3: RAG System</div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Bootcamp4.png" alt="Generative AI">
+                <div class="study-caption">Module 4: Generative AI</div>
+              </div>
+              
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="star-section">
+            <h4><i class="bi bi-bullseye"></i> Situation</h4>
+            <ul>
+              <li>Worked as a mechanical engineer applying AI/ML to physical simulations (FEA/CFD) — but as a user, not a builder.</li>
+              <li>Recognized a clear gap: unable to communicate fluently with AI engineers on model architecture, training, and deployment.</li>
+              <li>Decided to close that gap by enrolling in an intensive, government-funded AI engineering program.</li>
+            </ul>
+
+            <h4><i class="bi bi-check-circle"></i> Task</h4>
+            <ul>
+              <li>Complete an intensive 7-month full-stack AI engineering curriculum covering Computer Vision and NLP/LLM pipelines.</li>
+              <li>Build deployable AI projects spanning object detection, instance segmentation, retrieval-augmented generation, and generative AI.</li>
+              <li>Develop production-ready skills: model training, serving, cloud deployment, and performance optimization.</li>
+            </ul>
+
+            <h4><i class="bi bi-gear-wide-connected"></i> Action</h4>
+            <ul>
+              <li>Hands-on project-based learning across four core AI engineering domains:</li>
+            </ul>
+            <ul class="list-unstyled ps-3">
+              <li class="mb-3">
+                <span class="module-badge">Module 1</span> <strong style="color:#eee;">Object Detection</strong>
+                <div class="ps-4 text-secondary mt-1">
+                  Built a real-time pill recognition app using YOLOv8s — point a phone camera at pills and each one is instantly identified with a bounding box and label. Trained on a custom pill dataset and evaluated via mAP on Kaggle.
+                </div>
+              </li>
+              <li class="mb-3">
+                <span class="module-badge">Module 2</span> <strong style="color:#eee;">Segmentation</strong>
+                <div class="ps-4 text-secondary mt-1">
+                  Trained a U-Net model to color-classify every pixel in a football broadcast frame — grass, sky, goalpost, and each player assigned a distinct color. Used Dice Loss to handle class imbalance between large background and small player regions.
+                </div>
+              </li>
+              <li class="mb-3">
+                <span class="module-badge">Module 3</span> <strong style="color:#eee;">RAG System</strong>
+                <div class="ps-4 text-secondary mt-1">
+                  Built a document-based chatbot where a user uploads a PDF and asks questions — the AI finds the most relevant sentence and answers with the exact source highlighted. Used LangChain and FAISS for retrieval; iterated to reduce token cost while keeping answer quality.
+                </div>
+              </li>
+              <li class="mb-3">
+                <span class="module-badge">Module 4</span> <strong style="color:#eee;">Generative AI</strong>
+                <div class="ps-4 text-secondary mt-1">
+                  Built an ad image generator where uploading a casual photo (e.g. a coffee cup) instantly produces a polished advertisement — same subject, professional lighting and styling. Fine-tuned a diffusion model on brand-specific images and deployed end-to-end via Docker.
+                </div>
+              </li>
+            </ul>
+
+            <h4><i class="bi bi-trophy"></i> Result</h4>
+            <ul>
+              <li>Successfully completed the full 7-month program with 3-tier project portfolio (beginner → intermediate → advanced).</li>
+              <li>Gained practical proficiency in the full AI engineering lifecycle: data preparation → model training → serving → deployment.</li>
+              <li>Strengthened capacity to integrate deep learning directly into engineering research pipelines (FEA/CFD + AI).</li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="col-lg-4 portfolio-info" style="color: #ddd;">
+            <h3 style="border-bottom: 2px solid #00a84c; padding-bottom: 10px; margin-bottom: 25px; color: #fff;">Project Information</h3>
+            <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Program Name:</strong> AI Engineer Bootcamp (딥러닝 모델 기반 AI 엔지니어 부트캠프)</li>
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Category:</strong> AI & Deep Learning</li>
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Institution:</strong> Codeit Sprint (코드잇 스프린트)</li>
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Funding:</strong> Government-Funded · K-Digital Training<br><span style="color:#888; font-size:12px;">Value: approx. $17,000 USD </span></li>
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Period:</strong> 2025.08 – 2026.02</li>
+              <li style="margin-bottom: 12px;"><strong style="color: #00a84c;">Software Stack:</strong> Python, PyTorch, OpenCV, LangChain, FAISS, Docker, Hugging Face Transformers</li>
+            </ul>
+
+            <div class="achievement-box" style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border-left: 4px solid #00562e; margin-top: 20px;">
+              <h5 style="color: #eee; font-weight: 700; margin-bottom: 15px;">
+                <i class="bi bi-journal-bookmark-fill"></i> Key Outcomes
+              </h5>
+
+              <div class="paper-item" style="margin-bottom: 12px; font-size: 13.5px; line-height: 1.6;">
+                <span style="background: #e0e0e0; color: #00562e; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 5px;">PROJECT</span>
+                <strong style="color: #eee;">Object Detection & Segmentation</strong>
+                <div style="color: #bbb; font-size: 12px;">Computer Vision pipeline · PyTorch · Kaggle submission</div>
+              </div>
+
+              <div class="paper-item" style="margin-bottom: 12px; font-size: 13.5px; line-height: 1.6;">
+                <span style="background: #e0e0e0; color: #00562e; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 5px;">PROJECT</span>
+                <strong style="color: #eee;">Document QA via RAG</strong>
+                <div style="color: #bbb; font-size: 12px;">LangChain · Vector DB · LLM API · cost optimization</div>
+              </div>
+
+              <div class="paper-item" style="font-size: 13.5px; line-height: 1.6;">
+                <span style="background: #e0e0e0; color: #00562e; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-right: 5px;">PROJECT</span>
+                <strong style="color: #eee;">Multimodal Ad Generator</strong>
+                <div style="color: #bbb; font-size: 12px;">Diffusion model fine-tuning · Docker · Cloud deployment</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

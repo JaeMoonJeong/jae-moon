@@ -655,6 +655,9 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #18d26e;
   margin-bottom: 10px;
+  min-height: 54px; /* 3줄 기준 (18px * 3) — 가장 긴 제목에 맞춰 조정 */
+  display: flex;
+  align-items: center;
 }
 
 .resume .resume-item h5 {
